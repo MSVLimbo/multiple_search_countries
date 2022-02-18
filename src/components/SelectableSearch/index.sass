@@ -1,0 +1,64 @@
+input
+  outline: none
+  border: none
+
+.selector-component
+  display: flex
+  flex-direction: row
+  margin: 10px
+  width: 100%
+
+.selector-tags
+  margin: 0 20px
+  width: calc(100% - 450px)
+  flex-direction: row
+  position: absolute
+  max-height: 90px
+  overflow: auto
+  display: flex
+  left: 400px
+  flex-wrap: wrap
+  justify-content: right
+
+.multi-selector
+  display: flex
+  flex-direction: column
+  width: max-content
+
+.select-field
+  border: 1px solid rgb(187, 187, 187)
+
+.select-field, .country, .list
+  width: 100%
+  background-color: white
+  padding: 0.3rem
+
+.list
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2)
+  display: none
+
+.down-arrow
+  font-size: 1rem
+  display: inline-block
+  float: right
+  cursor: pointer
+  transition: 0.2s linear
+
+.country
+  display: block
+  padding-left: 0
+
+.country span
+  float: right
+  font-size: 0.6rem
+  padding-top: 6px
+
+.country:hover
+  background-color: aliceblue
+
+.show
+  display: block
+
+.rotate180
+  transform: rotate(-60deg)
+
